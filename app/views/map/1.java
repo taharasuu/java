@@ -76,3 +76,28 @@ public class Main {
   }
 }
 
+
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 1; i < 10; i++) {
+      for (int j = 1; j < 10; j++) {
+        System.out.print(i*j);
+        System.out.print("");
+      }
+    System.out.println("");  
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    String whight = 60;
+    String message;
+    message = "おもさの値が" +  whight + "に等しい";
+    System.out.println(message);
+  }
+}
+
+(age1 + age2) * 2 > 60
+age % 2 == 1
+name.equals("湊")

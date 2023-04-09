@@ -1,5 +1,5 @@
 public class Main {
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 	    boolean tenki = false;
 	    if (tenki == true) {
 	        System.out.println("洗濯をします");
@@ -11,7 +11,7 @@ public class Main {
 }
 
 public class Main {
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 	    boolean tenki = true;
 	    if (tenki == true) {
 	        System.out.println ("洗濯物をする");
@@ -23,13 +23,13 @@ public class Main {
 
 
 public class Main {
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 	    boolean boorClose = true;
 	    while (doorClose == true){
 	        System.out.println("ノックする");
 	        System.out.println("1分待つ");
 	    }
-	    
+
 	}
 }
 
@@ -84,7 +84,7 @@ public class Main {
         System.out.print(i*j);
         System.out.print("");
       }
-    System.out.println("");  
+    System.out.println("");
     }
   }
 }
@@ -101,3 +101,20 @@ public class Main {
 (age1 + age2) * 2 > 60
 age % 2 == 1
 name.equals("湊")
+
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("こんにちは");
+    int isHungry = new java.util.Random().nextInt(2) +1;
+    if (isHungry == 1) {
+      System.out.println("お腹がいっぱいです")
+    } else {
+      String food = ("寿司");
+      System.out.println("腹ペコです");
+      System.out.println( food + "をいただきます");
+    }
+    System.out.println("ごちそうさまでした");
+  }
+}
+

@@ -34,6 +34,7 @@ public class Main {
   }
 }
 
+
 public class Main {
   public static int add(int x, int y) {
     int ans = x + y;
@@ -43,6 +44,7 @@ public class Main {
     System.out.println(add(add(10, 20), add(30, 40)));
   }
 }
+
 
 public class Main {
   public static int add(int x, int y) {
@@ -60,6 +62,7 @@ public class Main {
     System.out.println(add("Hello", "World"));
   }
 }
+
 
 public class Main {
   public static int add(int x, int y) {

@@ -38,6 +38,7 @@ public class Main {
     comment.Kouhan.showMondokoro();
   }
 }
+
 //Zenhan.java
 package comment;
 
@@ -63,3 +64,11 @@ public class Kouhan {
     Zenhan.doTogame();
   }
 }
+
+//6-3　3秒の待ち時間を入れる
+public static void showMondokoro() throws Exception {
+    System.out.println("飛車さん、角さん。もういいでしょう。");
+    System.out.println("この紋所が目にはいらぬか！");
+    Thread.sleep(3000);
+    Zenhan.doTogame();
+  }

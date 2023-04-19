@@ -65,7 +65,7 @@ public class Kouhan {
   }
 }
 
-//6-3　3秒の待ち時間を入れる
+//6-3　3秒の待ち時間を
 public static void showMondokoro() throws Exception {
     System.out.println("飛車さん、角さん。もういいでしょう。");
     System.out.println("この紋所が目にはいらぬか！");

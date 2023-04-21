@@ -53,8 +53,8 @@ public class Hero {
     /*属性の定義*/
   String name; 　　　　　　　　　//名前の宣言
   int hp;　　　　　　　　　　　　//HPの宣言
-    /*操作の定義*/　
-  public void attack() { ~ } 
+    /*操作の定義*/
+  public void attack() { ~ }
   public void sleep() { ~ }
   public void sit(int sec) { ~ }
   public void slip() { ~ }
@@ -63,9 +63,9 @@ public class Hero {
 
 
 
-//8-5フィールドの宣言　
+//8-5フィールドの宣言
 /*属性を宣言するにはクラスブロックの中に変数宣言をする同時に初期値の設定をする*/
-  
+
 //Matang.java
 public class Matang {
   int hp;
@@ -88,7 +88,7 @@ public class Matang {
 public class Hero {
   String name;
   int hp;
-  
+
   public void sleep() {  /*オブジェクト指数に基づいたメソッドにはstticをつけない*/
     this.hp = 100;　　　/*自身のインスタンスのhpフィールドに100を代入*/
     System.out.println(this.name + "は、眠って回復した");
@@ -128,7 +128,7 @@ public class Hero {
 Hero h;
 
 
-//8-10.11 神様クラスを作る 
+//8-10.11 神様クラスを作る
 //Main.java
 public class Main {
   public static void main(String[] args) {
@@ -171,5 +171,35 @@ public class Hero {
 }
 
 
-//8-15 お化けきのこ
-public 
+//8-15 お化けきのこクラスの定義
+public class Matango {
+  int hp;
+  final int LEVEL = 10;
+  char suffix;
+  public void run() {
+    System.out.println("お化けきのこ" + this.suffix + "は逃げ出した！");
+  }
+}
+
+
+//8-16 仮想世界に勇者とお化けきのこ２ひきを生み出す
+public class Main {
+  public static void main(String[] args) {
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+
+    Matango m1 = new Matango();
+    m1.hp = 50;
+    m1.sffix = "A";
+
+    Matango m2 = new matango();
+    m2.ph = 48;
+    m2.sffix = "B";
+
+    h.slip();
+    m1.run();
+    m2.run();
+    h.run();
+  }
+}

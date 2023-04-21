@@ -122,3 +122,54 @@ public class Hero {
     System.out.println("最終HPは" + this.hp + "でした");
   }
 }
+
+
+//8-9 Hero型の変数を宣言
+Hero h;
+
+
+//8-10.11 神様クラスを作る 
+//Main.java
+public class Main {
+  public static void main(String[] args) {
+    //勇者を生成
+    Hero h = new Hero();
+    //フィールドに初期値をセット
+    h.name = "ミナト";
+    h.hp = 100;
+  　System.out.println("勇者" + h.name + "を生み出した！");
+  　//勇者のメソッドを呼び出していく
+  　h.sit(5);
+  　h.slip();
+  　h.sit(25);
+  　h.run();
+  }
+}
+//Hero.java
+public class Hero {
+  String name;
+  int hp;
+  public void sleep() {
+    this.hp = 100;
+    System.out.println(this.name + "は、眠って回復した！");
+  }
+  public void sit(int sec) {
+    this.hp += sec;
+    System.out.println(this.name + "は、" + sec + "秒座った！");
+    System.out.println("HPが" + sec + "ポイント回復した");
+  }
+  public void slip() {
+    this.hp -= 5;
+    System.out.println(this.name + "は、転んだ！");
+    System.out.println("5のダメージ！");
+  }
+  public void run() {
+    System.out.println(this.name + "は、逃げ出した！");
+    System.out.println("GAMEOVER");
+    System.out.println("最終HPは" + this.hp + "でした");
+  }
+}
+
+
+//8-15 お化けきのこ
+public 

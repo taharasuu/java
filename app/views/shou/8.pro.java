@@ -16,6 +16,10 @@ public class Clerc {
   public void pray( int sec) {
     System.out.println(this.name + "は" + "秒間天に祈った");
     int recover = new Random().nextInt(3) + sec;
+    int recoverActual = Math.min(this.max_mp - this.mp, recover);
     
+    this.mp += recoverActual;
+    System.out.println("MPが" + recoverActual + "回復した");
+    return recoverActual;
   }
 }

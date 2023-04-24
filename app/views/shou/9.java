@@ -50,3 +50,64 @@ public class Hero {
     System.out.println("現在の武器は" + h.sword.name);
   }
 }
+
+//9-5 回復魔法を伝えるWizardクラス
+public class Wizard {
+  String name;
+  int hp;
+  public void heal(Hero h) {
+    h.hp += 10;
+    System.out.println(h.name + "のHPを10回復した！");
+  }
+}
+
+//9-6 勇者と魔法つかいを生み出す
+public class Main {
+  public static void main(String[] args) {
+    Hero h1 = new Hero();
+    h1.name = "ミナト";
+    h1.hp = "100";
+    Hero h2 = new Hero();
+    h2.name = "アサカ";
+    h2.hp = 100;
+    Wizard w = new Wizard();
+    w.name = "わずらい";
+    w.hp = 50;
+    w.heal(h1);
+    w.heal(h2);
+    w.heal(h2);
+  }
+}
+
+//9-7 newを使って文字列のインスタンスを生成
+public class Main {
+  public static void main(String[] args) {
+    String s = new String("こんにちは");
+    System.out.println(s);
+  }
+}
+
+//9-8.9. 生まれた直後の動作を定義したHeroクラス
+public class Hero {
+  Hero h1 = new Hero(); //インスタンスの生成
+  h1.name = "ミナト";　//初期値をセット
+  h1.hp = 100;　　　　
+  Hero h2 = new Hero();　//インスタンスを生成
+  h2.name = "アサカ";
+  h2.hp = 100;
+  Wizard w = new Wizard();　//インスタンスを生成
+  w.name = "わずらい";
+  w.hp = 50;
+  w.heal(h1);　　　　　　　//ここからメインプログラム
+  w.heal(h2);
+  w.heal(h2);
+    
+  public void attack() {
+    
+  } 
+  
+  public void Hero(String name) {
+    this.hp = 100;
+    this.name = name;
+  }
+}

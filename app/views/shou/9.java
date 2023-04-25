@@ -87,7 +87,7 @@ public class Main {
   }
 }
 
-//9-8.9. 生まれた直後の動作を定義したHeroクラス
+//9-8.9.10 生まれた直後の動作を定義したHeroクラス
 public class Hero {
   Hero h1 = new Hero(); //インスタンスの生成
   h1.name = "ミナト";　//初期値をセット

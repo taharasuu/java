@@ -141,3 +141,15 @@ public calss Main {
     System.out.println(h1.money);
   }
 }
+
+//14-15 静的メソッドから非静的メソッドめんばを利用（エラー）
+public class Hero {
+  String name;
+  int hp;
+  static int money;
+  
+  public static void setRandomMoney(){
+    Hero.money = (int)(Math.random() * 1000);
+    System.out.println(this.name + "たちの所持金を初期化しました");
+  } /*勇者インsぬたんすが存在しない状態で呼び出されるてもエラーになる*/
+}

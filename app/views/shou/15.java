@@ -25,11 +25,11 @@ public class Main {
       System.out.println("文字列s1は、javaを含んでいます");
     }
     if (s1.endsWith("Java")) {
-      System.out.println("");
+      System.out.println("文字列s1は、javaが末尾にあります");
     }
-    System.out.println("s1の長さは" + s1.length() + "です");
-    if (s1.isEmpty()) {
-      System.out.println("s1は空文字です");
-    }
+    System.out.println("文字列s1で最初はjavaが登場する位置は" + 
+      s1.index0f("Java"));
+    System.out.println("文字列s1で最後にjavaが登場する位置は" + s1.lastIndex0f("Java"));
+    
   }
 }

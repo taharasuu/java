@@ -97,3 +97,32 @@ public class Main {
     System.out.pritnln(w);
   }
 }
+
+//15-9 桁を揃えてキャラクターを表示する
+final String FORMAT = "%-9s %-13s 所持金%,6d";
+String s = STring.format (FOEMAT,hero.getName(),hero.getJob(),hero.getGold());
+System.out.println(s);
+
+//15.6 日付と日時
+//15-10処理時間を計測する
+public class main {
+  public static void main(String[] args) {
+    long start = System.currentTimeMillis();
+    //ここで何らかの時間がかかる処理
+    long end = System.currentTimeMillis();
+    System.out.println("処理にかかった時間は・・・" + (end -start) + "ミリ秒でした");
+  }
+}
+
+//15-11 現在日時を表示する
+public java.util.Date;
+
+public class Main {
+  public class Main {
+    Date now = new Date(); /*現在の日時を取得*/
+    System.out.println(now);
+    System.out.println(now.getTime());
+    Date past = new Date(1600705425827L); /*2020/9/22 1:23:24のlong値*/
+    System.out.println(past);
+  }
+}
